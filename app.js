@@ -75,7 +75,7 @@ function checkAns(idx) {
 			setTimeout(levelUp, 1000); // if same color give it have delay
 		}
 	} else {
-		h2.innerHTML = `Game Over! Your score was<b>${level}</b> <br> Press any key to start again.`;
+		h2.innerHTML = `Game Over! Your score was = <b>${level}</b> <br> Press any key to start again.`;
 		// give red background of game over
 		document.querySelector("body").style.backgroundcolor = "red";
 		setTimeout(function () {
