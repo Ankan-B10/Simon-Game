@@ -1,5 +1,55 @@
-body{
+body {
     text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f0f0f0, #e2b9b9);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1.stylish-heading {
+    font-weight: 800;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+h1.stylish-heading span {
+    display: inline-block;
+    padding: 0.2em 0.4em;
+    margin: 0 0.1em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    animation: colorCycle 5s infinite;
+}
+
+/* Background colors for heading letters */
+h1.stylish-heading span:nth-child(1) { background-color: #ff5733; }
+h1.stylish-heading span:nth-child(2) { background-color: #33c1ff; }
+h1.stylish-heading span:nth-child(3) { background-color: #ff33a1; }
+h1.stylish-heading span:nth-child(4) { background-color: #8d33ff; }
+h1.stylish-heading span:nth-child(5) { background-color: #33ff57; }
+h1.stylish-heading span:nth-child(6) { background-color: #ffc733; }
+h1.stylish-heading span:nth-child(7) { background-color: #ff3333; }
+h1.stylish-heading span:nth-child(8) { background-color: #33d4ff; }
+h1.stylish-heading span:nth-child(9) { background-color: #c733ff; }
+
+@keyframes colorCycle {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 2rem;
 }
 
 .btn{
